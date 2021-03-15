@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->integer('status_id');
+            $table->integer('status_id')->default(1);
             $table->boolean('admin')->default(0);
             $table->text('description')->nullable();
             $table->rememberToken();

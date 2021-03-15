@@ -8,8 +8,8 @@
                 <form action="{{route('login')}}" method="post">
                     @csrf
                     <div class="mb-3">
-                        <label for="loginLog" class="form-label">Логин:</label>
-                        <input type="text" name="loginLog" id="loginLog" required placeholder="Логин">
+                        <label for="emailLog" class="form-label">Эл. почта::</label>
+                        <input type="email" name="emailLog" id="emailLog" required placeholder="Эл. почта:">
                     </div>
                     <div class="mb-3">
                         <label for="passwordLog" class="form-label">Пароль:</label>

@@ -11,8 +11,8 @@
                         <input type="text" name="nameReg" id="nameReg" required placeholder="ФИО">
                     </div>
                     <div class="mb-3">
-                        <label for="loginReg" class="form-label">Логин:</label>
-                        <input type="text" name="loginReg" id="loginReg" required placeholder="Логин">
+                        <label for="emailReg" class="form-label">Эл. почта:</label>
+                        <input type="email" name="emailReg" id="emailReg" required placeholder="Эл. почта:">
                     </div>
                     <div class="mb-3">
                         <label for="passwordReg" class="form-label">Пароль:</label>
@@ -22,7 +22,7 @@
                 </form>
             </div>
             <div class="alert alert-success">
-                <h6>Вы успешно зарегистрировались(нет)</h6>
+                <h6>Вы успешно зарегистрировались</h6>
             </div>
         </div>
     </div>

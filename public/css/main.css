@@ -93,6 +93,13 @@ textarea {
     background-color: #383737;
 }
 
+.button:focus {
+    color: #3f3c3d;
+    background-color: #e9ecef;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(56, 55, 55, .25)
+}
+
 .button-group {
     display: flex;
 }
@@ -149,8 +156,10 @@ header .menu {
     color: #3f3c3d;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item:focus{
     color: #0d6efd;
+    border: none;
+    outline: none;
 }
 
 header .menu-page {
@@ -217,16 +226,16 @@ footer h2 {
 /*    height: 100px;*/
 /*}*/
 
-.bg-cards{
+.bg-cards {
     background: #ffffff;
 }
 
-.card-img-top{
+.card-img-top {
     object-fit: cover;
     height: 210px;
 }
 
-.card{
+.card {
     border: none;
 }
 
@@ -258,15 +267,17 @@ footer h2 {
     margin-bottom: 30px;
 }
 
+.app_about-title:not(a) {
+    padding-left: 10px;
+}
+
 .app_about-title h2 {
     font-size: 32px;
     color: #055555;
-    padding-left: 10px;
     margin-bottom: 10px;
 }
 
 .app_about-title span {
-    padding-left: 10px;
     font-size: 16px;
     font-weight: 300;
 }

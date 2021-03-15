@@ -1,24 +1,28 @@
 /*Регистрация*/
 $('.alert-success').hide();
+$('.alert-danger').hide();
 
 $('#regBtn').on('click', function (e) {
     e.preventDefault();
 
     let name = $('#nameReg').val();
-    let login = $('#loginReg').val();
+    let email = $('#emailReg').val();
     let password = $('#passwordReg').val();
 
     $.ajax({
         type: 'POST',
         url: '/registration',
         dataType: 'text',
-        data: {name: name, login: login, password: password},
+        data: {name:name, email:email, password:password},
         headers: {
-            'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         success: function (){
             $('.form').hide();
             $('.alert-success').show();
+        },
+        error: function (msg){
+
         },
     });
     return false;

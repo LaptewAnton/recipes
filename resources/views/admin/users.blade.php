@@ -20,7 +20,7 @@
                 <th scope="row">{{$user->id}}</th>
                 <td>{{$user->name}}</td>
                 <td>#</td>
-                <td><a href="{{route('user_delete', $user->id)}}">Удалить</a></td>
+                <td>#</td>
             </tr>
         @endforeach
         </tbody>

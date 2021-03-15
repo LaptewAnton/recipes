@@ -11,11 +11,9 @@
         </div>
         <div class="app_about">
             <div class="app_about-title">
-                <h2>{{$recipe->title}}</h2>
+                <p>Название рецепта:</p>
+                <input type="text" value="{{$recipe->title}}" placeholder="{{$recipe->title}}">
                 <span>~{{$recipe->time}} минут </span><span>| {{$recipe->difficulty->name}}</span>
-                @if(Auth::check() == 1 && Auth::user()->id == $recipe->user_id)
-                    <a href="#" class="button">Удалить</a>
-                @endif
             </div>
             <div class="app-description">
                 <div class="app-category">

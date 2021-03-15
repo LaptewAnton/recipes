@@ -16,7 +16,7 @@
                 </li>
                 @if(Auth::check() && Auth::user()->admin == 1)
                     <li>
-                        <a class="menu-item" href="">
+                        <a class="menu-item" href="{{route('admin')}}">
                             Администрирование
                         </a>
                     </li>

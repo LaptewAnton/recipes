@@ -11,6 +11,6 @@
 @endsection
 
 @section('content')
-    @include('components.recipes')
+    @include('components.recipe_cards')
     </div>
 @endsection

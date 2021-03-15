@@ -5,7 +5,7 @@
     @endsection
 
     @section('content')
-    @include('components.recipes')
+    @include('components.recipe_cards')
     {{$recipes->render()}}
     <br>
     </div>
