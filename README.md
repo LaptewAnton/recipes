@@ -1,5 +1,5 @@
 Сайт рецептов
 
-
-База:
+<hr>
+<p>База:</p>
 <img src="/public/img/db/db.png">
